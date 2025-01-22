@@ -1,18 +1,70 @@
-# Contact-Manager-pro.
-This Contact Manager project is a simple React application designed to manage a list of contacts. It allows users to add new contacts, view their details (name and email), and delete contacts. The contact data is stored in localStorage to persist even after the page is refreshed
-Key Features:
-Add Contacts:
+# Getting Started with Create React App
 
-Users can add a new contact by entering their name and email into a form. Once the form is submitted, the contact is added to the list, and the data is stored in localStorage.
-Each contact is given a unique identifier using UUID (Universal Unique Identifier) to ensure that every contact has a distinct ID, which is necessary for operations like deleting a contact.
-View Contacts:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The list of contacts is displayed on the main screen. For each contact, the name and email are shown.
-A "Delete" button (represented by a DeleteIcon) next to each contact allows the user to remove that contact from the list.
-Persistence with localStorage:
+## Available Scripts
 
-The contact list is stored in the browser’s localStorage, ensuring that the data persists even after the page is reloaded. This is achieved using React's useEffect hook to save the list to localStorage every time it changes.
-On page load, the app checks if any contact data already exists in localStorage. If so, it loads the data and populates the contact list.
-Delete Contacts:
+In the project directory, you can run:
 
-Users can delete a contact from the list. When the delete button is clicked, the contact is removed from both the state and localStorage.
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
